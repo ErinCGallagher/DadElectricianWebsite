@@ -736,3 +736,52 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @theme-primary;
 }
+
+// Testimonials section
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.testimonial-item ul li blockquote {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 80px;
+    position: relative;
+    border: 0; 
+}
+.testimonial-item ul li  small {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.testimonial-item ul li blockquote::before {
+    content: '“';
+    left: 30px;
+}
+.testimonial-item ul li blockquote::before, .testimonial-item ul li blockquote::after {
+    position: absolute;
+    font-weight: 300;
+    font-size: 3em;
+    font-family: Georgia, serif;
+    color: #ccc;
+    top: 62%;
+}
+.testimonial-item ul li blockquote::after {
+    content: '”';
+    right: 30px;
+}
