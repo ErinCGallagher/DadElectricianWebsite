@@ -750,30 +750,26 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-.testimonial-item ul li blockquote {
+.testimonial-item blockquote {
     font-size: 18px;
     line-height: 32px;
     font-weight: 300;
     text-align: center;
     display: inline-block;
-    width: 100%;
-    margin: 20px 0;
+    left: 10%;
+    width: 80%;
     padding: 0 80px;
     position: relative;
     border: 0; 
 }
-.testimonial-item ul li  small {
+.testimonial-item small {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
     display: inline-block;
     width: 100%;
 }
-.testimonial-item ul li blockquote::before {
-    content: '“';
-    left: 30px;
-}
-.testimonial-item ul li blockquote::before, .testimonial-item ul li blockquote::after {
+.testimonial-item blockquote::before, .testimonial-item blockquote::after {
     position: absolute;
     font-weight: 300;
     font-size: 3em;
@@ -781,7 +777,44 @@ q:before, q:after {
     color: #ccc;
     top: 62%;
 }
-.testimonial-item ul li blockquote::after {
-    content: '”';
-    right: 30px;
+
+.testimonial-item img {
+    width: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 15px;
+}
+
+#tSlider.carousel{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+.quote {
+    color: #e2e2e2;
+    text-align: center;
+    margin-bottom:-30px;
+}
+
+//carousel
+
+.carousel-control {
+  color: #333;
+}
+
+.carousel-control hover{
+  color: #333;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-indicators li {
+    background: #ccc;
+}
+
+.carousel-indicators .active {
+    background: #666;
 }
