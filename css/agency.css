@@ -744,10 +744,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
