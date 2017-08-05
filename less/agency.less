@@ -249,6 +249,69 @@ section {
     text-transform: none;
 }
 
+// About Section
+
+section#about {
+    img {
+        border-radius: 10%;
+    }
+    .about-item {
+        padding-top:20px;
+    }
+}
+
+// Testimonials section
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.testimonial-item blockquote {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+    left: 10%;
+    width: 80%;
+    padding: 0 80px;
+    position: relative;
+    border: 0; 
+}
+.testimonial-item small {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.testimonial-item blockquote::before, .testimonial-item blockquote::after {
+    position: absolute;
+    font-weight: 300;
+    font-size: 3em;
+    font-family: Georgia, serif;
+    color: #ccc;
+    top: 62%;
+}
+
+.testimonial-item img {
+    width: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 15px;
+}
+
+.quote {
+    color: #e2e2e2;
+    text-align: center;
+    margin-bottom:-30px;
+}
+
 // Contact Section
 
 section#contact {
@@ -256,7 +319,7 @@ section#contact {
     background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
-    .section-heading {
+    .section-heading, .section-subheading{
         color: white;
     }
     .form-group {
@@ -279,22 +342,22 @@ section#contact {
     ::-webkit-input-placeholder {
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: #e2e2e2;
     }
     :-moz-placeholder { /* Firefox 18- */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: #e2e2e2;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: #e2e2e2;
     }
     :-ms-input-placeholder {  
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: #e2e2e2;
     }
     .text-danger {
         color: @theme-danger;
@@ -377,59 +440,8 @@ body {
     webkit-tap-highlight-color: @theme-primary;
 }
 
-// Testimonials section
-
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-.testimonial-item blockquote {
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 300;
-    text-align: center;
-    display: inline-block;
-    left: 10%;
-    width: 80%;
-    padding: 0 80px;
-    position: relative;
-    border: 0; 
-}
-.testimonial-item small {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-}
-.testimonial-item blockquote::before, .testimonial-item blockquote::after {
-    position: absolute;
-    font-weight: 300;
-    font-size: 3em;
-    font-family: Georgia, serif;
-    color: #ccc;
-    top: 62%;
-}
-
-.testimonial-item img {
-    width: 70px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 15px;
-}
-
-.quote {
-    color: #e2e2e2;
-    text-align: center;
-    margin-bottom:-30px;
-}
-
 //carousel
+
 #tSlider.carousel{
     padding-top:60px;
     padding-bottom:60px;

@@ -302,13 +302,71 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+section#about img {
+  border-radius: 10%;
+}
+section#about .about-item {
+  padding-top: 20px;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+.testimonial-item blockquote {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+  display: inline-block;
+  left: 10%;
+  width: 80%;
+  padding: 0 80px;
+  position: relative;
+  border: 0;
+}
+.testimonial-item small {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.testimonial-item blockquote::before,
+.testimonial-item blockquote::after {
+  position: absolute;
+  font-weight: 300;
+  font-size: 3em;
+  font-family: Georgia, serif;
+  color: #ccc;
+  top: 62%;
+}
+.testimonial-item img {
+  width: 70px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 15px;
+}
+.quote {
+  color: #e2e2e2;
+  text-align: center;
+  margin-bottom: -30px;
+}
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
-section#contact .section-heading {
+section#contact .section-heading,
+section#contact .section-subheading {
   color: white;
 }
 section#contact .form-group {
@@ -332,27 +390,27 @@ section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #e2e2e2;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #e2e2e2;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #e2e2e2;
 }
 section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #e2e2e2;
 }
 section#contact .text-danger {
   color: #e74c3c;
@@ -418,57 +476,6 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-.testimonial-item blockquote {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 300;
-  text-align: center;
-  display: inline-block;
-  left: 10%;
-  width: 80%;
-  padding: 0 80px;
-  position: relative;
-  border: 0;
-}
-.testimonial-item small {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-}
-.testimonial-item blockquote::before,
-.testimonial-item blockquote::after {
-  position: absolute;
-  font-weight: 300;
-  font-size: 3em;
-  font-family: Georgia, serif;
-  color: #ccc;
-  top: 62%;
-}
-.testimonial-item img {
-  width: 70px;
-  display: inline-block;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  margin-bottom: 15px;
-}
-.quote {
-  color: #e2e2e2;
-  text-align: center;
-  margin-bottom: -30px;
 }
 #tSlider.carousel {
   padding-top: 60px;
