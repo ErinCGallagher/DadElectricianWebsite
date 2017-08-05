@@ -24,7 +24,6 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" type="text/css" href="css/testimonials.css">
     <link href="css/agency.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -144,40 +143,44 @@
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
-            <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-            <div id="tSlider" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#tSlider" data-slide-to="0" class="active"></li>
-                    <li data-target="#tSlider" data-slide-to="1"></li>
-                    <li data-target="#tSlider" data-slide-to="2"></li>
-                </ol>
+            <div class="row">
+                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+            </div>
+            <div class="row">
+                <div id="tSlider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#tSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#tSlider" data-slide-to="1"></li>
+                        <li data-target="#tSlider" data-slide-to="2"></li>
+                    </ol>
 
-                <div class="carousel-inner">               
-                    <div class="item active testimonial-item">
-                        <blockquote>
-                            <img src="img/thumb.png" class="img-responsive img-centered">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, duo id diam putent patrioque, dicant tantas dissentiunt et sea, te viris appareat perfecto est. Prompta fierent et mea, has ne natum dolorem. </p>
-                        </blockquote>
-                        <small>Shaun Paul, Client</small>
+                    <div class="carousel-inner">               
+                        <div class="item active testimonial-item">
+                            <blockquote>
+                                <img src="img/thumb.png" class="img-responsive img-centered">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, duo id diam putent patrioque, dicant tantas dissentiunt et sea, te viris appareat perfecto est. Prompta fierent et mea, has ne natum dolorem. </p>
+                            </blockquote>
+                            <small>Shaun Paul, Client</small>
+                        </div>
+                        <div class="item testimonial-item">
+                            <blockquote>
+                                <img src="img/thumb.png" class="img-responsive img-centered">
+                                <p class="text-muted" >Ei mundi solet has. Pro nulla possit ne, cum cu lorem labore vituperatoribus. Graeco tamquam voluptatibus cum cu, duo fabulas molestie vivendum at, id ius lorem vocibus facilisis.</p>
+                            </blockquote>
+                            <small>Marry Smith, Client</small>
+                        </div>
                     </div>
-                    <div class="item testimonial-item">
-                        <blockquote>
-                            <img src="img/thumb.png" class="img-responsive img-centered">
-                            <p class="text-muted" >Ei mundi solet has. Pro nulla possit ne, cum cu lorem labore vituperatoribus. Graeco tamquam voluptatibus cum cu, duo fabulas molestie vivendum at, id ius lorem vocibus facilisis.</p>
-                        </blockquote>
-                        <small>Marry Smith, Client</small>
-                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#tSlider" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#tSlider" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#tSlider" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#tSlider" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </section>
@@ -256,9 +259,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
-    <!-- slider jQuery -->
-    <script src="js/jquery.bxslider.min.js"></script>
     
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
