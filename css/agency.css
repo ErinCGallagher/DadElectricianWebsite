@@ -302,11 +302,23 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
-section#about img {
-  border-radius: 10%;
+section#about {
+  padding-top: 80px;
 }
 section#about .about-item {
   padding-top: 20px;
+}
+section#about .about-line {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #ccc;
+}
+section#about .about-bold {
+  margin: 5px 0;
+  text-transform: none;
+}
+section#about .about-section {
+  padding-left: 0px;
 }
 blockquote,
 q {
