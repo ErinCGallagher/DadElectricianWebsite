@@ -25,8 +25,8 @@ mail($to,$email_subject,$email_body,$headers);
 //confirmation email
 $to_confirm = $email_address;
 $email_subject_confrim = "Impact Construction: We received your email!";
-$email_body_confirm = "Thank you for reaching out to Impact Construction. We have received your email and will get back to you soon. \n\ Thank You,\n\n Neil Gallagher\n\n (416)-995-6933";
+$email_body_confirm = "Thank you for reaching out to Impact Construction. We have received your email and will get back to you soon. \n\n Thank You, \nNeil Gallagher \n(416)-995-6933";
 $headers = "From: noreply@impactconstruction.com\n";
-mail($to_confirm,$email_subject_confrim,$email_body_confrim,$headers);
+mail($to_confirm,$email_subject_confrim,$email_body_confirm,$headers);
 return true;         
 ?>
