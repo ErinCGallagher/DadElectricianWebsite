@@ -217,6 +217,20 @@ header {
     }
 }
 
+@media(max-width:768px) {
+    header {
+        padding-top:90px;
+        padding-bottom:90px;
+        .intro-text {
+            .intro-heading {
+                .heading-font;
+                font-size: 40px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
 // Global Section Styles
 
 section {
@@ -268,6 +282,16 @@ section#about {
 
     .about-section {
         padding-left:0px;
+    }
+}
+
+@media(max-width:768px) {
+    .about-line {
+        display:none;
+    }
+    .about-section {
+        padding-top:20px;
+        text-align:center;
     }
 }
 

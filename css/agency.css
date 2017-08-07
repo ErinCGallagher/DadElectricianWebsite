@@ -277,6 +277,18 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 768px) {
+  header {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+}
 section {
   padding: 100px 0;
 }
@@ -319,6 +331,15 @@ section#about .about-bold {
 }
 section#about .about-section {
   padding-left: 0px;
+}
+@media (max-width: 768px) {
+  .about-line {
+    display: none;
+  }
+  .about-section {
+    padding-top: 20px;
+    text-align: center;
+  }
 }
 blockquote,
 q {
