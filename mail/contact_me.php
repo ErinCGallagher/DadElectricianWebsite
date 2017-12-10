@@ -25,7 +25,7 @@ mail($to,$email_subject,$email_body,$headers);
 
 //confirmation email
 $to_confirm = $email_address;
-$email_subject_confrim = "Impact Construction & Electrical: I've received your email!";
+$email_subject_confrim = "Impact Construction & Electrical: I have received your email!";
 $email_body_confirm = "Thank you for reaching out to Impact Construction & Electrical Inc. I have received your email and will get back to you soon. \n\nThank You, \n\nNeil Gallagher \n(416)-995-6933";
 $headers = "From: noreply@impactconstruction.com\n";
 mail($to_confirm,$email_subject_confrim,$email_body_confirm,$headers);
