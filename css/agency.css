@@ -240,6 +240,7 @@ header {
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
+  text-align: right;
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -256,10 +257,17 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
+header .intro-text .sub-intro-heading {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+  margin-bottom: 70px;
+}
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
+    text-align: right;
   }
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -274,7 +282,13 @@ header .intro-text .intro-heading {
     font-weight: 700;
     font-size: 75px;
     line-height: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+  }
+  header .intro-text .sub-intro-heading {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -282,11 +296,26 @@ header .intro-text .intro-heading {
     padding-top: 90px;
     padding-bottom: 90px;
   }
+  header .intro-text {
+    text-align: center;
+  }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
+  }
+  header .intro-text .sub-intro-heading {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  header .intro-text .sub-intro-heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 60px;
   }
 }
 section {
@@ -319,6 +348,9 @@ section#about {
 }
 section#about .about-item {
   padding-top: 20px;
+}
+section#about .about-item-two {
+  padding-bottom: 20px;
 }
 section#about .about-line {
   float: left;
